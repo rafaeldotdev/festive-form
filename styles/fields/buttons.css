@@ -1,0 +1,81 @@
+.button-wrapper {
+  flex: 1 0 0;
+  height: 3rem;
+  & label {
+    margin-block: auto;
+  }
+}
+
+#switch {
+  margin-block: auto;
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: all 250ms;
+
+  & button,
+  & span {
+    transition: all 500ms;
+  }
+
+  & .toogle-on-btn {
+    cursor: pointer;
+    background-color: var(--input-stroke);
+    position: absolute;
+    border: 0;
+    border-radius: 9999px;
+    height: 1.7em;
+    width: 1.7em;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+  & .toogle-on-span {
+    background-color: var(--input-base);
+  }
+
+  & button {
+    cursor: pointer;
+    background-color: var(--text-heading);
+    left: initial;
+    right: 10%;
+    position: absolute;
+    border: 0;
+    border-radius: 9999px;
+    height: 1.7em;
+    width: 1.7em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & span {
+    display: inline-block;
+    border-radius: 5rem;
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--brand-light);
+    border: 2px solid var(--input-stroke);
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: end;
+
+  & button {
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background-color: var(--brand-dark);
+    border: 0;
+    border-radius: 0.5rem;
+
+    color: var(--text-heading);
+    font: var(--fs-md);
+    font-weight: 600 !important;
+    line-height: normal;
+  }
+}

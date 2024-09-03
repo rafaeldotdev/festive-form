@@ -1,0 +1,61 @@
+#app {
+  display: grid;
+  grid-template-columns: 36% 64%;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  overflow: hidden;
+
+  aside {
+    margin-left: auto;
+    .aside-container {
+      background: linear-gradient(
+          180deg,
+          rgba(33, 37, 38, 0.8) 0%,
+          rgba(33, 37, 38, 0.65) 20%,
+          rgba(33, 37, 38, 0.3) 40.5%,
+          rgba(33, 37, 38, 0.1) 100%
+        ),
+        url(/assets/images/Background.svg) lightgray 50% / cover no-repeat;
+      max-width: 25rem;
+      height: 45.5rem;
+      flex-shrink: 0;
+      padding: 2rem;
+      border-radius: 0.5rem;
+    }
+
+    header {
+      max-width: 21rem;
+    }
+
+    img {
+      width: 2.81rem;
+      height: 3rem;
+      object-fit: cover;
+    }
+
+    h1 {
+      font: var(--font-logo);
+      color: var(--pink);
+    }
+    p {
+      font-weight: 300 !important;
+      font: var(--fs-md);
+    }
+  }
+
+  main {
+    overflow: auto;
+    background-color: var(--shape-body);
+    padding: 5rem 0;
+    border-radius: 0.5rem;
+    max-width: 51rem;
+
+    & .main-container {
+      margin-inline: auto;
+      max-width: 35rem;
+      margin-right: auto;
+    }
+  }
+}
