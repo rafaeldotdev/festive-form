@@ -64,6 +64,7 @@
   justify-content: end;
 
   & button {
+    cursor: pointer;
     padding: 0.75rem 1.25rem;
     display: flex;
     align-items: center;

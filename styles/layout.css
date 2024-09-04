@@ -17,7 +17,7 @@
           rgba(33, 37, 38, 0.3) 40.5%,
           rgba(33, 37, 38, 0.1) 100%
         ),
-        url(/assets/images/Background.svg) lightgray 50% / cover no-repeat;
+        url(../assets/images/Background.svg) lightgray 50% / cover no-repeat;
       max-width: 25rem;
       height: 45.5rem;
       flex-shrink: 0;
